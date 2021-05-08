@@ -4,3 +4,10 @@ php:
 before_script:
 #- composer install
 script: echo 'none'
+deploy:
+        provider: heroku
+        app: sesion6-travis-heroku
+        on: master
+        skip_cleanup: true
+        api_key:
+                secure: h9IuyyaJjU/9425EVxaksFDp5ncrPjxO8ERrmfNjcgfk7mHLLbSt3EIVg/8sla03nUgTD3R3PIYSvguSrZfjLl5ek1Qpx/5oPBuM2lmN3b+Og7fUVh11nriSi6LUeUtxuYKTfpN9tJ0Y4hrz04EESw/rRJLTWbfdGZgfxN/AUUoxXqD2eii2RAJbdXsUbORnsiG1b91tgtkFu/I3NTBy2LxiWc1ZpqlGp8h08iE4WCxNVBWG5H42EdyoM9iVUM2UdhaXcrvDppZJAAXAuGpJXlDiw1sLgZdTjCh5PsTCpsSHvH7pSotz18EXBTrNHyt8u8b+442akWoJ9WbiMoLREDZZBvIvy5bW32j+9D66q74n3gyJniKgWCKXMlXkiRgKXF1hPIrUYoFT1mb5u8dkC2qllmHBiN/eVM5DODlwqpc+V+f53j1F0FCUcMS9/DI/AHhB/zVJQRQzdvms71ogXpKIiN16MDNtPDd2L0Bw/B9MM+vXfTUTEgFsa8bRh3JQux6MEuy4T6dsM5TExcdBV+LsY/PVqCcADjdiid9Y8zujuNOK+wKsGbozd8SPETG73pJ2phxKpgtykGrQEl2BKm/65B01TAWti9kDwh45fjkadjFqrycNaPMyvcAP1XvMijHWhEujoEcwBCLOZ1b+vOgBZxMGHz2M7tx5cs2YeCE=
