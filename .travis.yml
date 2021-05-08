@@ -6,7 +6,7 @@ before_script:
 script: echo 'none'
 deploy:
   provider: heroku
-  app: organizacion-sesion-3-anabel-palasi 
+  app: sesion6-travis-heroku 
   on: master
   skip_cleanup: true
   api_key:
